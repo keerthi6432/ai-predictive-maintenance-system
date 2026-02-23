@@ -1,77 +1,186 @@
-# 🔧 Predictive Maintenance Using Machine Learning
+🚀 AI-Based Predictive Maintenance System
 
-A machine learning project designed to predict equipment failures before they occur, enabling proactive maintenance in industrial settings. This approach helps minimize downtime, optimize repair schedules, and extend the lifecycle of critical machinery.
+A Machine Learning project designed to predict industrial equipment failures before they occur. This system enables proactive maintenance, reduces unexpected downtime, optimizes repair scheduling, and extends the lifecycle of critical machinery.
 
----
-
-## 📚 Table of Contents
-
-- [Overview](#overview)
-- [Dataset & Variables](#dataset--variables)
-- [Methodology](#methodology)
-- [Results](#results)
-- [Technologies Used](#technologies-used)
-- [How to Run](#how-to-run)
-- [Contact](#contact)
 
 ---
 
-## 📌 Overview
+📌 Project Overview
 
-Predictive maintenance uses data from sensors installed in machines to predict potential failures. This project builds several machine learning models—including Random Forest, Decision Trees, Bagging, and LSTM Neural Networks—to classify and predict failure types in industrial equipment like pumps, motors, and compressors.
+Predictive Maintenance is a key component of Industry 4.0 and smart manufacturing. This project uses machine learning and deep learning models to analyze sensor data and classify potential failure types in industrial machines such as pumps, motors, and compressors.
 
----
+By identifying early warning signs, industries can significantly reduce operational costs and improve equipment efficiency.
 
-## 📊 Dataset & Variables
-
-This synthetic dataset simulates real-world sensor readings collected from manufacturing machinery.
-
-| Variable         | Description |
-|------------------|-------------|
-| `Temperature`     | Operating temperature of the equipment (°C) |
-| `Vibration`       | Level of vibration detected (0 to 1) |
-| `Pressure`        | Internal pressure in bars |
-| `Humidity`        | Ambient humidity (%) |
-| `RPM`             | Rotations per minute |
-| `Voltage`         | Voltage supply (V) |
-| `Current`         | Current usage (A) |
-| `Sound_Level`     | Noise level in decibels |
-| `Oil_Quality`     | Index of oil degradation (0 to 1) |
-| `Load`            | Machine load percentage (%) |
-| `Machine Type`    | Equipment type: Pump, Motor, Compressor |
-| `Component Type`  | Specific part being monitored |
-| `Failure Type`    | Target variable showing failure type (mechanical, electrical, etc.) |
 
 ---
 
-## 🔍 Methodology
+🎯 Key Objectives
 
-1. **Data Generation & Preprocessing**
-   - Randomized synthetic data generation
-   - Feature encoding, scaling, and train-test split
+Predict machine failures before breakdown
 
-2. **Model Development**
-   - Classical ML models: Random Forest, Decision Tree, Bagging
-   - Deep learning: LSTM (for sequential data analysis)
+Compare multiple ML and DL models
 
-3. **Model Evaluation**
-   - Metrics: Accuracy, Precision, Recall, F1 Score
+Analyze sensor data patterns
 
----
+Improve maintenance planning through data-driven insights
 
-## 📈 Results
 
-- **Random Forest** delivered strong classification accuracy.
-- **LSTM Neural Network** effectively captured temporal relationships in sensor data.
-- **Bagging models** enhanced robustness and generalization.
-- Early prediction of failure types enables better planning and minimized downtime.
 
 ---
 
-## 🛠 Technologies Used
+📊 Dataset Description
 
-- Python
-- NumPy, Pandas
-- Scikit-learn
-- Matplotlib, Seaborn
-- TensorFlow / Keras
+This project uses a synthetic dataset simulating real-world industrial sensor readings.
+
+🔹 Features Used
+
+Variable	Description
+
+Temperature	Operating temperature (°C)
+Vibration	Vibration level (0–1 scale)
+Pressure	Internal pressure (bars)
+Humidity	Ambient humidity (%)
+RPM	Rotations per minute
+Voltage	Supply voltage (V)
+Current	Current usage (A)
+Sound_Level	Noise level (dB)
+Oil_Quality	Oil degradation index (0–1)
+Load	Machine load percentage (%)
+Machine Type	Pump / Motor / Compressor
+Component Type	Specific monitored component
+Failure Type	Target variable (Mechanical, Electrical, etc.)
+
+
+
+---
+
+🧠 Methodology
+
+1️⃣ Data Preprocessing
+
+Synthetic data generation
+
+Data cleaning and encoding
+
+Feature scaling
+
+Train-test split
+
+
+2️⃣ Model Development
+
+Random Forest Classifier
+
+Decision Tree
+
+Bagging Classifier
+
+LSTM Neural Network (for sequential data analysis)
+
+
+3️⃣ Model Evaluation
+
+Performance evaluated using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1 Score
+
+
+
+---
+
+📈 Results
+
+Random Forest achieved strong classification accuracy.
+
+LSTM effectively captured temporal dependencies in sensor readings.
+
+Bagging improved model robustness.
+
+Early failure detection helps minimize downtime and improve operational efficiency.
+
+
+
+---
+
+🛠 Tech Stack
+
+Python
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+TensorFlow / Keras
+
+Matplotlib
+
+Seaborn
+
+Jupyter Notebook
+
+
+
+---
+
+▶️ How to Run the Project
+
+1. Clone the repository:
+
+git clone https://github.com/your-username/ai-predictive-maintenance-system.git
+
+
+2. Navigate into the project folder:
+
+cd ai-predictive-maintenance-system
+
+
+3. Install required libraries:
+
+pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
+
+
+4. Open the Jupyter Notebook:
+
+jupyter notebook
+
+
+5. Run all cells in Predictive_Maintenance_Using_Machine_Learning.ipynb
+
+
+
+
+---
+
+💡 Future Improvements
+
+Add real-time dashboard using Streamlit
+
+Deploy model using Flask or FastAPI
+
+Implement Explainable AI (SHAP)
+
+Integrate real industrial IoT datasets
+
+
+
+---
+
+📌 Business Impact
+
+This project demonstrates how AI can reduce equipment downtime, improve maintenance scheduling, and optimize manufacturing efficiency — aligning with modern smart factory solutions.
+
+
+---
+
+👩‍💻 Author
+
+Keerthi
+B.Tech – Artificial Intelligence & Machine Learning
